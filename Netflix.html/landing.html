@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="css/landing.css">
+     
+</head>
+<body>
+    
+</body>
+</html>
+  
+<div class="layout">
+    <div class="header">
+        <img src="Images/logo.png" alt="">
+    </div>
+<div class="outline">
+    <div class="login" v-if="logging">
+        <div v-if="errorDiv" class="errorDiv">
+            <h1>LOGIN</h1>
+            <div v-if="emailError"> enter correct email<div>
+            <div v-if="passwordErrorone">  password inncorrect </div>
+            <div v-if="passwordError"><strong> enter correct password or email</strong><br> Try again <div>
+        </div> 
+        <transition name="vanish" appear="">
+            <div v-if="completeDiv" class="completeDiv">
+                Account DONE!
+            </div>
+            </transition>
+            <input type="text" v-model="email" placeholder="Phone number / email address">
+            <input type="password" v-model="password" placeholder="password">
+            <button @click.prevent="onSubmit"> SUBMIT </button>
+            <div class="register"><p> JOIN THE NETFLIX FAMILY!<a @click="register= "true">Register Now </a></p></div>
+            <div class="register-now"><p> ALREADY A MEMBER?<br> <a @click="login = "false"> LOGIN here </a></p></div> 
+        </div>
+        <div id="Register" class="boxlayout" v-if="register">
+            <h1> REGISTER</h1>
+            <div v-if="errorDiv" class="errorDiv">
+                <div v-if="emailError"> enter correct email<div>
+                <div v-if="passwordErrorone">  password inncorrect </div>
+                <div v-if="passwordError">enter correct password or email</div>
+            </div>
+            <input type="text" v-model="email" placeholder="Email/Phone NO.">
+            <input type="password" v-model="password" placeholder="password">
+            <button @click.prevent="register"> Register </button>
+            <div class="register"><p> JOIN THE NETFLIX FAMILY!<a @click="register= "false">Register Now </a></p></div>
+            <div class="login"><p> ALREADY A MEMBER?<br> <a @click="login = "false"> LOGIN here </a></p></div> 
+            
+        </div>
+    </div>  
+</div>
+<script src="js/landing.js"></script>
+
+</body>
+</html>

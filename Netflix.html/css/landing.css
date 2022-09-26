@@ -1,0 +1,150 @@
+
+.completeDiv{
+    width: 350px;
+    height: auto;
+    padding: 10px 0px 10px 0px;
+    background: #e72d20;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color:black   
+}
+.errorDiv{
+    width: 350px;
+    height: relative;
+    padding: 10px 0px 10px 0px;
+    background: #f0382a;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color:rgb(255, 255, 255)
+}
+h1{
+    margin-right: 2000px;
+}
+.register a{
+    color: white;
+}
+.register   a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.register p{
+    color: #8c8c8c;
+}
+.register{
+    margin-top: 10px;
+}
+.header{
+    position: absolute;
+    width: 200px;
+    z-index: 1;
+}
+.header img{
+    width: 80%;
+    margin-top: 22px;
+    margin-left: 48px;
+}
+.outline{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+.layout{
+    background: url('https://i.ibb.co/ynf52h8/zgeTuV.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.boxlayout h1{
+    color: white;
+    font-size: 29px;
+    margin-right: 150px;
+    margin-top: 55px;
+}
+.boxlayout button{
+    margin-top: 25px;
+    width: 300px;
+    height: 45px;
+    background: #f51a25;
+    border: 0px;
+    outline: 0px;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+.boxlayout button:hover{
+    cursor: pointer;
+}
+.boxlayout input:focus{
+   background: #454545;
+}
+.boxlayout input::placeholder{
+    color: #8c8c8c;
+    font-family: FreeSans;
+    font-size: 15px;
+}
+.boxlayout input{
+    width: 300px;
+    height: 42px;
+    background: #333333;
+    border: 0px;
+    outline: none;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+    text-indent:20px;
+}
+.boxlayout{
+    width: 423px;
+    height: auto;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 50px;
+}
+@media (max-width:425px){
+    .login{
+    width: 90%;
+    height: auto;
+    padding-bottom: 50px;
+    }
+    .register{
+        display: none;
+    }
+    .register-now{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .register-now a{
+    color: white;
+    }
+    .register-now a:hover{
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .register-now p{
+        color: #a5a2a2;
+    }
+    .register-now{
+        margin-top: 10px;
+    }
+};
